@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: #cccccc;
+    background-image: url(https://s1.1zoom.me/b5050/596/Evening_Forests_Mountains_Firewatch_Campo_Santo_549147_1920x1080.jpg);
+    background-position: center;
+}
+
+.calculadora {
+    position: relative;
+    display: grid;
+}
+
+.calculadora:hover {
+    cursor: pointer;
+}
+
+.calculadora .value {
+    grid-column: span 4;
+    height: 80px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.calculadora span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: white;
+    place-items: center;
+    background: rgb(43, 43, 43);
+    border: 1px solid rgb(58, 58, 58);
+}
+
+.calculadora span:active {
+    background: #a3a3a3;
+    color: #111111;
+}
+
+.calculadora span.clear {
+    grid-column: span 2;
+    width: 120px;
+    background: rgb(88, 88, 88);
+}
+
+.calculadora span.plus {
+    grid-row: span 2;
+    height: 120px;
+}
+
+.calculadora span.igual {
+    grid-column: span 2;
+    width: 120px;
+    background: rgb(88, 88, 88);
+}
